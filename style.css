@@ -1,86 +1,171 @@
-/* Reset básico */
+/* Estilo global */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #ffffff; /* Verde muito claro */
+    color: #333;
 }
 
-header {
-    background-color: #002f6c; /* Azul escuro profissional */
+/* Navbar */
+.navbar {
+    background: linear-gradient(45deg, #006400, #228B22); /* Gradiente verde escuro */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
     color: white;
-    padding: 10px 0;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Logo */
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
     text-decoration: none;
-    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: color 0.3s;
 }
 
-/* Links de navegação */
-.nav-links {
-    list-style: none;
+.navbar a:hover {
+    color: #ffffff; /* Verde limão */
+}
+
+.navbar .search-bar input {
+    border: 2px solid #228B22;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.navbar .search-bar button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar .search-bar button:hover {
+    background-color: #228B22;
+}
+
+/* Seção de produtos */
+.product-section {
+    padding: 50px 15px;
+    background-color: #ffffff; /* Verde claro */
+    text-align: center;
+}
+
+.product-section h3 {
+    font-size: 2.5rem;
+    color: #006400;
+    margin-bottom: 30px;
+}
+
+/* Container de cards */
+.card-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.nav-links li {
+/* Estilo de cards */
+.card {
+    background: #ffffff; /* Branco puro */
+    border: 2px solid #228B22;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #228B22;
+}
+
+.card h5 {
+    font-size: 1.2rem;
+    color: #006400;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card a {
     display: inline-block;
-}
-
-.nav-links a {
+    background: linear-gradient(45deg, #006400, #32CD32); /* Gradiente verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     text-decoration: none;
-    color: white;
     font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card a:hover {
+    background: linear-gradient(45deg, #228B22, #adff2f); /* Gradiente verde claro */
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(45deg, #006400, #228B22);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #adff2f;
+    margin: 0 10px;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ffc107; /* Amarelo destaque */
+footer a:hover {
+    color: white;
 }
-
-/* Barra de busca */
-.search-bar {
+.product-section{
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: white;
-    border-radius: 20px;
-    padding: 5px 10px;
+}
+.card{
+    height: 600px;
+    width: 350px;
 }
 
-.search-bar input {
-    border: none;
-    outline: none;
-    padding: 5px;
-    font-size: 1rem;
+.local {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.search-bar button {
-    background: none;
-    border: none;
-    color: #002f6c;
-    cursor: pointer;
-    font-size: 1.2rem;
+.local1{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* Ícones */
-.icons a {
-    color: white;
-    font-size: 1.2rem;
-    margin-left: 15px;
-    transition: color 0.3s;
-}
-
-.icons a:hover {
-    color: #ffc107;
+#mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
