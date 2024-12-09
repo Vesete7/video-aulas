@@ -96,8 +96,8 @@ body {
 }
 
 .card p {
-    font-size: 1.1rem;
-    color: #333;
+    font-size: 1.4rem;
+    color: #bb0404;
     margin-bottom: 15px;
 }
 
@@ -168,4 +168,8 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+}
+
+#nomefont{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
