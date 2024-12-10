@@ -40,7 +40,7 @@
         </nav>
     </header>
 
-<img src="img/branco.jpg" height="140px" width="100px" alt="">
+<img src="img/branco.jpg"  height="140px" width="100px" alt="">
 
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -62,15 +62,16 @@
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span  class="visually-hidden">Next</span>
         </button>
-      </div>
+        <div id="promocoes"></div>
+      </div >
 
     <!-- Conteúdo Principal -->
-    <main>
-        <section class="product-section py-5">
-            <div class="container">
-                <h3 class="text-center mb-4">Promoções</h3>
+    <main> 
+        <section class="product-section py-5" >
+            <div class="container" >
+                <h3 class="text-center mb-4" >Promoções</h3>
                 <div class="row">
                     <!-- Card 1 -->
                     <div class="ps-5 col-md-4">
@@ -78,7 +79,16 @@
                             <img src="img/FlamengoBlack.png" class="card-img-top" alt="Camisa Flamengo">
                             <div class="card-body">
                                 <h5 class="card-title">Flamengo Consciência Negra</h5>
-                                <p class="card-text">R$ 179,90</p>
+
+
+                                <p class="card-text" id="corpocartao">
+                                    De: <span class="preco-antigo">R$ 250,90</span> por:
+                                </p>
+                                <p class="card-text" id="corpocartao">
+                                    <span class="preco-novo">R$ 179,90 à vista</span>
+                                </p>
+
+
                                 <a href="#" class="btn btn-primary w-100">Comprar</a>
                             </div>
                         </div>
@@ -90,7 +100,12 @@
                             <img src="img/VascoDourado.webp" class="card-img-top" alt="Camisa Vasco">
                             <div class="card-body">
                                 <h5 class="card-title">Vasco Dourada</h5>
-                                <p class="card-text">R$ 179,90</p>
+                                <p class="card-text" id="corpocartao">
+                                    De: <span class="preco-antigo">R$ 250,90</span> por:
+                                </p>
+                                <p class="card-text" id="corpocartao">
+                                    <span class="preco-novo">R$ 179,90 à vista</span>
+                                </p>
                                 <a href="#" class="btn btn-primary w-100">Comprar</a>
                             </div>
                         </div>
@@ -102,8 +117,13 @@
                             <img src="img/CorinthiansBlack.avif" class="card-img-top" alt="Camisa Corinthians">
                             <div class="card-body">
                                 <h5 class="card-title">Corinthians All-Black</h5>
-                                <p class="card-text">R$ 179,90</p>
-                                <a href="#" class="btn btn-primary w-100">Comprar</a>
+                                <p class="card-text" id="corpocartao">
+                                    De: <span class="preco-antigo">R$ 250,90</span> por:
+                                </p>
+                                <p class="card-text" id="corpocartao">
+                                    <span class="preco-novo">R$ 179,90 à vista</span>
+                                </p>
+                                  <a href="#" class="btn btn-primary w-100">Comprar</a>
                             </div>
                         </div>
                     </div>
